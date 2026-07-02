@@ -1,8 +1,12 @@
 "use strict";
 
-// The deployment artifact and the local `http.server -d site` command both
-// expose the generated data mirror below the website root.
-const DATA_PATHS = ["./data/papers.json", "../data/papers.json"];
+// Pages reads the current main-branch data directly, so daily bot commits do
+// not require a fresh Pages deployment. Local mirrors remain as fallbacks.
+const DATA_PATHS = [
+  "https://raw.githubusercontent.com/XiaofengLi-Econ/trade-research-tracker/main/data/papers.json",
+  "./data/papers.json",
+  "../data/papers.json",
+];
 
 const searchInput = document.querySelector("#search");
 const economistFilter = document.querySelector("#economist-filter");

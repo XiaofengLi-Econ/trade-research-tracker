@@ -32,7 +32,7 @@ Open <http://localhost:8000>. The scraper writes canonical data to `data/papers.
 
 ## Automatic updates
 
-`.github/workflows/update.yml` runs daily, on pushes to `main`, and when started manually from the Actions tab. It installs Python 3.11 dependencies, runs the scraper, commits the JSON files only when their contents change, and directly deploys a fresh GitHub Pages artifact.
+`.github/workflows/update.yml` runs daily, on pushes to `main`, and when started manually from the Actions tab. It installs Python 3.11 dependencies, runs the scraper, commits changed JSON, and keeps the branch-based Pages files under `docs/` synchronized.
 
 If branch protection prevents the workflow from pushing, allow GitHub Actions to create commits or adjust the workflow to open a pull request instead.
 
@@ -42,11 +42,11 @@ The simplest deployment keeps this folder at the root of its own GitHub reposito
 
 1. Push the repository to GitHub.
 2. Open **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **GitHub Actions**.
-4. Open the **Actions** tab and run **Update research tracker**, or push to `main`.
+3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+4. Select branch `main`, folder `/docs`, and click **Save**.
 5. Visit `https://<account>.github.io/<repository>/` after the deployment finishes.
 
-The workflow copies the frontend and latest paper data into one deployment artifact. The published homepage is therefore at the repository site's root, not under `/site/`.
+The published homepage is at the repository site's root. Its JavaScript reads the latest `data/papers.json` directly from `main`, so daily data commits do not need to trigger a new Pages build.
 
 ## How matching works
 
