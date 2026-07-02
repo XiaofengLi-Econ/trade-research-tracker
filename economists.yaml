@@ -1,0 +1,62 @@
+# Economist pages are intentionally configured as data, not hard-coded in the
+# scraper. Personal sites move often, so edit papers_url whenever a page moves.
+
+- name: Marc Melitz
+  field: International trade
+  homepage: https://melitz.scholars.harvard.edu/
+  papers_url: https://melitz.scholars.harvard.edu/publications
+  notes: Harvard publications page.
+
+- name: Arnaud Costinot
+  field: International trade
+  homepage: https://economics.mit.edu/people/faculty/arnaud-costinot
+  papers_url: https://economics.mit.edu/people/faculty/arnaud-costinot
+  notes: Faculty profile currently doubles as the research index.
+
+- name: Dave Donaldson
+  field: International trade
+  homepage: https://economics.mit.edu/people/faculty/dave-donaldson
+  papers_url: https://economics.mit.edu/people/faculty/dave-donaldson
+  notes: Faculty profile; replace with a dedicated papers page if available.
+
+- name: Pol Antràs
+  field: International trade
+  homepage: https://antras.scholars.harvard.edu/
+  papers_url: https://antras.scholars.harvard.edu/publications/types/working-paper
+  notes: Dedicated Harvard working-papers page.
+
+- name: Stephen Redding
+  field: International trade and economic geography
+  homepage: https://stephenredding.github.io/
+  papers_url: https://stephenredding.github.io/
+  notes: Personal website linked from his current Stanford profile.
+
+- name: Andrés Rodríguez-Clare
+  field: International trade and development
+  homepage: https://www.econ.berkeley.edu/profile/andres-rodriguez-clare
+  papers_url: https://www.econ.berkeley.edu/profile/andres-rodriguez-clare
+  notes: Faculty profile; replace with a dedicated papers page if available.
+
+- name: Natalia Ramondo
+  field: International trade and multinational production
+  homepage: https://nataliaramondo.com/
+  papers_url: https://nataliaramondo.com/
+  notes: Single-page personal site with a Research section.
+
+- name: Oleg Itskhoki
+  field: International trade and macroeconomics
+  homepage: https://itskhoki.com/
+  papers_url: https://itskhoki.com/research/
+  notes: Personal research page.
+
+- name: Samuel Kortum
+  field: International trade and innovation
+  homepage: https://economics.yale.edu/people/samuel-kortum
+  papers_url: https://economics.yale.edu/people/samuel-kortum
+  notes: Faculty profile; replace with a dedicated papers page if available.
+
+- name: Jonathan Eaton
+  field: International trade
+  homepage: https://example.com/jonathan-eaton
+  papers_url: https://example.com/jonathan-eaton/papers
+  notes: Placeholder; replace with a maintained archive or personal papers page.

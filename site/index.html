@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="New working papers from international trade economists.">
+    <title>International Trade Research Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <p class="eyebrow">Working paper monitor</p>
+        <h1>International Trade Research Tracker</h1>
+        <p class="intro">A lightweight index of research posted on economists’ personal websites.</p>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="controls" aria-label="Paper filters">
+        <label>
+          <span>Search papers</span>
+          <input id="search" type="search" placeholder="Title or economist" autocomplete="off">
+        </label>
+        <label>
+          <span>Economist</span>
+          <select id="economist-filter">
+            <option value="">All economists</option>
+          </select>
+        </label>
+      </section>
+
+      <div class="results-heading">
+        <p id="result-count" aria-live="polite">Loading papers…</p>
+      </div>
+      <section id="paper-list" class="paper-list" aria-label="Working papers"></section>
+      <p id="empty-state" class="empty-state" hidden>No papers match these filters.</p>
+      <p id="error-state" class="error-state" hidden>Paper data could not be loaded. Try refreshing the page.</p>
+    </main>
+
+    <footer class="page-shell">
+      <p>Links lead to the authors’ source pages. Metadata is collected automatically and may need occasional correction.</p>
+    </footer>
+  </body>
+</html>
