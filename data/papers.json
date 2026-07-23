@@ -1,5 +1,13 @@
 [
   {
+    "economist": "Stephen Redding",
+    "title": "NBER International Trade Data",
+    "url": "https://stephenredding.github.io/NBER-trade-data.html",
+    "source_page": "https://stephenredding.github.io/",
+    "detected_date": "2020",
+    "first_seen": "2026-07-23"
+  },
+  {
     "economist": "Oleg Itskhoki",
     "title": "What Drives US Import Price Inflation?",
     "url": "https://itskhoki.com/papers/AIW_PNP_2024.pdf",
